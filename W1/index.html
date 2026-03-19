@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HSDX Main Page</title>
+    <style>
+        body { margin: 0; overflow: hidden; font-family: sans-serif; background: #000; }
+        #ui-layer {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 10;
+            pointer-events: none;
+        }
+        .mainTitle { color: #66f1c1; font-size: 20px; margin: 0; }
+        .title, .subhead {
+            pointer-events: auto;
+            cursor: pointer;
+            padding: 15px 20px;
+            margin-bottom: 10px;
+            transition: 0.3s;
+        }
+        .title { background-color: rgba(128, 128, 128, 0.8); }
+        .subhead { background-color: rgba(0, 0, 0, 0.8); color: white; font-size: 12px; }
+        .subhead:hover { background-color: #66f1c1; color: black; }
+    </style>
+</head>
+<body>
+    <div id="ui-layer">
+        <div class="title" onclick="window.transitionToCamera('DefaultCam')">
+            <h1 class="mainTitle">HSDX.AM</h1>
+        </div>
+        <div class="subhead" onclick="window.transitionToCamera('ConsoleCam')">Games</div>
+        <div class="subhead" onclick="window.transitionToCamera('OutdoorCam')">Music</div>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>

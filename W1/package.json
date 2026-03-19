@@ -1,0 +1,19 @@
+{
+  "name": "w1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "gsap": "^3.14.2",
+    "three": "^0.183.2",
+    "vite": "^8.0.0"
+  }
+}
