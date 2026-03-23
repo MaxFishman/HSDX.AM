@@ -112,7 +112,6 @@ export default function App() {
           ))}
       </div>
 
-      {/BB* 3D CANVAS: dpr=0.4 creates the pixelated look */}
       <Canvas 
         dpr={0.4} 
         gl={{ antialias: false }}
